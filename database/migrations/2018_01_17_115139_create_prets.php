@@ -15,16 +15,17 @@ class CreatePrets extends Migration
     {
         Schema::create('prets', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('matricule',10);
+            $table->integer('code_unite');
+            $table->string('matricule',10)->nullable();;
             $table->string('Nom',80);
             $table->string('prenom',80);
             $table->date('date_pret');
-            $table->float('mt_initial');
-            $table->float('reliquat');
-            $table->float('retenue');
-            $table->boolean('bloquer');
-            $table->boolean('actif');
-            $table->boolean('deleted');
+            $table->float('mt_initial')->default(0);
+            $table->float('reliquat')->default(0);
+            $table->float('retenue')->default(0);
+            $table->boolean('bloquer')->default(false);
+            $table->boolean('actif')->default(true);
+            $table->boolean('deleted')->default(false);
             $table->timestamps();
         });
     }

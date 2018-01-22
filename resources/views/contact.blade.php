@@ -3,8 +3,8 @@
 @section('content')
     <div class="container">
         <div class="content">
-            <div class="title">Contact Page</div>
-            <div class="quote">Our contact page!</div>
+            <div class="title">Page Contact</div>
+            <div class="quote">Notre page de contact !</div>
         </div>
     </div>
 @endsection

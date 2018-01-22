@@ -18,6 +18,9 @@
 Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 Route::get('/contact', 'PagesController@contact');
+Route::get('/unite/create', function (){
+    return view('unite.create');
+});
 
 Route::get('/file',function() {
     $file= 'iso.pdf';

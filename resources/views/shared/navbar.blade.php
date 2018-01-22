@@ -8,19 +8,29 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Learning Laravel</a>
+            <a class="navbar-brand" href="#">Unité PTS</a>
         </div>
         <!-- Navbar Right -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="/about">A propos</a></li>
+                <li><a href="/contact">Contacter</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Member <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Unités <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="/users/register">Register</a></li>
-                        <li><a href="/users/login">Login</a></li>
+                        <li><a href="/unite/create">Créer</a></li>
+                        <li><a href="/unite/update">Modifier</a></li>
+                        <li><a href="/unite/drop">Supprimer</a></li>
+                        <li><a href="/unite/index">Lister</a></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Membres <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/users/register">Enregistrer</a></li>
+                        <li><a href="/users/login">Authentifier</a></li>
                     </ul>
                 </li>
             </ul>
